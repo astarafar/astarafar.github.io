@@ -15,13 +15,14 @@
 
         .w3-table th:first-child,
         .w3-table td:first-child,
-        .w3-table-all narrow-table th:first-child,
-        .w3-table-all narrow-table td:first-child {
+        .w3-table-all th:first-child,
+        .w3-table-all td:first-child {
             padding-left: 8px;
         }
 
         pre {
             padding: 8px;
+            white-space: pre-wrap;
         }
 
         code {
@@ -44,11 +45,10 @@
         }
 
         .pre-wrapper .copy-snippet {
-            border-radius: 0;
+            border-radius: 4px;
             min-width: 55px;
             background: none repeat scroll 0 0 transparent;
             border: 1px solid #bbb;
-            font-family: 'HELEVETICA', sans-serif;
             font-size: 12px;
             font-weight: normal;
             line-height: 1.42rem;
@@ -59,8 +59,8 @@
             text-indent: 0;
             position: absolute;
             background: #ccc;
-            bottom: 0;
-            right: 0;
+            bottom: 8px;
+            right: 8px;
         }
 
         .pre-wrapper .copy-snippet:disabled {
@@ -103,6 +103,10 @@
             margin: 0 auto;
         }
 
+        .w3-table-all {
+            width: 100%;
+        }
+
         .narrow-table {
             table-layout: auto;
             width: auto;
@@ -141,7 +145,9 @@
             </ul>
             <pre>If you see a block of text displayed like this,
 it's the body of an in-game macro that you need to create.
-Each consecutive command will be on its own line.</pre>
+Each consecutive command will be on its own line.
+
+There is also a copy button for each macro block that will place the macro body on your clipboard, so that you can paste it right into the macro editor in-game.</pre>
             <hr>
             <div class="js-toc-content">
                 <h1 id="leveling-jobs">Leveling Jobs</h1>
@@ -169,7 +175,7 @@ Each consecutive command will be on its own line.</pre>
                     collectables.
                 </p>
                 <h2 id="collectable-appraisers">Collectable Appraisers</h2>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Zone</th>
@@ -329,7 +335,7 @@ Each consecutive command will be on its own line.</pre>
                     worth
                     it to
                     you. I didn't provide a rotation for this.</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -428,7 +434,7 @@ Each consecutive command will be on its own line.</pre>
                     accessories
                     from the level 50 set above until you hit level 60.</p>
                 <p>Continue using your primary and secondary tools from the level 50 set.</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Level</th>
@@ -502,7 +508,7 @@ Each consecutive command will be on its own line.</pre>
                     leveling.
                     The
                     Handmaster's Set (accessories) are not job-specific, and can be used across all crafting jobs.</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -589,7 +595,7 @@ Each consecutive command will be on its own line.</pre>
                     For a universal set at level 60, get the Ironworks Armor and the Handmaster's Accessories.</p>
                 <p>No matter which route you go at this level, use the primary and secondary tools from the Keep's set.
                 </p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -658,7 +664,7 @@ Each consecutive command will be on its own line.</pre>
                     only
                     need
                     to buy the set once.</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -742,7 +748,7 @@ Each consecutive command will be on its own line.</pre>
                     only
                     need
                     to buy the set once.</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -825,7 +831,7 @@ Each consecutive command will be on its own line.</pre>
                     items,
                     though you may be able to overcome this by melding/overmelding the Pactmaker's and AR-Caean pieces.
                 </p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -930,7 +936,7 @@ Each consecutive command will be on its own line.</pre>
                     want to
                     do
                     this, please talk to an experienced crafter/melder first. Your gil will thank you.</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Job Level</th>
@@ -989,7 +995,7 @@ Each consecutive command will be on its own line.</pre>
                 <h2 id="bis-materia-meld-level-90-high-end-set">BiS Materia Meld (Level 90 High-End
                     Set)
                 </h2>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>Item</th>
@@ -1361,7 +1367,7 @@ Each consecutive command will be on its own line.</pre>
                 <p>If your stats differ from those specified for the craft you're attempting, you may experience the
                     following
                     effects:</p>
-                <table class="w3-table-all narrow-table">
+                <table class="w3-table-all">
                     <thead>
                         <tr>
                             <th>&nbsp;</th>
