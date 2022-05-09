@@ -1677,13 +1677,13 @@ I've limited macros to 14 lines, so that there's a free line in case you want to
                                             <p>
                                                 Let's take this level 85 collectable crafting rotation as an example. The stats aren't important for this; let's just assume that your craftsmanship stat is just a little too high.
                                             </p>
-                                            <p><strong>Before</strong>: The last <code>Delicate Synthesis</code> action ("Before", first section, line 11) is maxing out your collectability and screwing up your craft.</p>
+                                            <p><strong>Before</strong>: The last <code>Delicate Synthesis</code> action (line 11) is maxing out your collectability and screwing up our craft.</p>
                                             <p>
-                                                We can prevent that synthesis action from blowing up our craft by inserting a <code>Final Appraisal</code> action right before it. Rather than finishing the craft,
-                                                <code>Final Appraisal</code> will cause it to stop 1 progress point short, leaving us free to complete the touch actions required to hit our collectability target.
+                                                We can prevent that synthesis action from capping progress and ruining our craft by inserting a <code>Final Appraisal</code> action right before it. Rather than finishing the craft,
+                                                <code>Final Appraisal</code> will cause it to stop one progress point short, leaving us free to complete the touch actions required to hit our collectability target.
                                             </p>
                                             <p>
-                                                <strong>After</strong>: In the example, we've inserted that <code>Final Appraisal</code> action at line 11 of the first section of the "After" macro, pushing our previously problematic
+                                                <strong>After</strong>: In the example, we've inserted that <code>Final Appraisal</code> action at line 11 of the first section, pushing our previously problematic
                                                 <code>Delicate Synthesis</code> action to line 12.
                                             </p>
                                         </div>
@@ -1761,12 +1761,12 @@ I've limited macros to 14 lines, so that there's a free line in case you want to
                                                 In that case, insert <code>Final Appraisal</code> before the synthesis action that's finishing the craft early, then remove all other synthesis actions after that one, except for the last one.
                                             </p>
                                             <p>
-                                                <strong>Before</strong>: In this example, let's say we're hitting full progress after just four synthesis actions (ending at line 7 in the original example above) instead of the seven we
+                                                <strong>Before</strong>: In this example, let's say we're hitting full progress after just four synthesis actions (ending with <code>Delicate Synthesis</code> at line 7) instead of the seven we
                                                 planned for.
                                             </p>
                                             <p>
-                                                <strong>After</strong>: To fix this, we've added <code>Final Appraisal</code> before that <code>Delicate Synthesis</code> action (line 7 in the macro to the left), then deleted the other
-                                                synthesis actions after that (lines 9 and 12). We've left the last synthesis action (<code>Careful Synthesis</code>, line 3 in the second section) because we do still need to finish the craft!
+                                                <strong>After</strong>: To fix this, we've inserted <code>Final Appraisal</code> at line 7, which pushes <code>Delicate Synthesis</code> to line 8. We then removed the other
+                                                synthesis actions after that (lines 9 and 12). We've left the last synthesis action (<code>Careful Synthesis</code>, second section, line 3) because we do still need to finish the craft!
                                             </p>
                                         </div>
                                     </div>
