@@ -4910,7 +4910,11 @@ I've limited macros to 14 lines, so that there's a free line in case you want to
                             .replace(/&lt;/g, "<")
                             .replace(/&gt;/g, ">")
                             .replace(/&quot;/g, '"')
-                            .replace(/&#039;/g, "'");
+                            .replace(/&#039;/g, "'")
+                            .replace(/<span class="line">/g, '')
+                            .replace(/<\/span>/g, '')
+                            .replace(/<\/?ins>/g, '')
+                            .replace(/<del>.*?<\/del>\n?/g, '');
                         document.body.appendChild(textArea);
                         textArea.select();
                         try {
